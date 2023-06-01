@@ -4,7 +4,7 @@ const cors = require('cors');
 const routes = require('./routes/routes');
 
 const app = express();
-const port = 8081;
+const port = 8080;
 app.use(cors());
 
 // Conexión a la base de datos MongoDB Atlas
