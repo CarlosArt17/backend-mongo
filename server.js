@@ -4,14 +4,14 @@ const cors = require('cors');
 const routes = require('./routes/routes');
 
 const app = express();
-const port = 8080;
+const port = 8081;
 app.use(cors());
 
 // Conexión a la base de datos MongoDB Atlas
-mongoose.connect('mongodb+srv://jona2708:Jonathan2708@bdnosql.p8tt50o.mongodb.net',{
+mongoose.connect('mongodb+srv://CarlosArt17:carlosart17@carlosart17.gs6c7g6.mongodb.net/?retryWrites=true&w=majority',{
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  dbName: 'bdnosql' // Reemplaza con el nombre real de tu base de datos
+  dbName: 'carlosart17' // Reemplaza con el nombre real de tu base de datos
 });
 
 // Middleware para analizar datos JSON en las solicitudes
